@@ -1,0 +1,13 @@
+.container-fluid {
+    text-align: center;
+} 
+
+.form-control{
+    width: 250px;
+    display: inline-table;
+    padding-left: 12px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+ 

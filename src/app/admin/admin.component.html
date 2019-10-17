@@ -1,0 +1,57 @@
+<mat-toolbar class="navbar">
+  <div><img src="../../assets/logo.png" width="120" height="90"></div>
+  <div>
+    <span> <mat-icon aria-hidden="false" aria-label="Example home icon" style="font-size: 35px !important ">assignment_ind</mat-icon></span>
+    <span>logout</span>
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav opened>
+    <mat-menu #appMenu = "matMenu" xPosition="after">
+      <button mat-menu-item [matMenuTriggerFor]="subMenu1">User Master</button>
+      <button mat-menu-item [matMenuTriggerFor]="subMenu2">Products Master</button>
+      <button mat-menu-item [matMenuTriggerFor]="subMenu3">Promotions</button>
+      <button mat-menu-item>Reports</button>
+      <button mat-menu-item>Customer Reviews</button>
+    </mat-menu>
+
+    <button mat-stroked-button [matMenuTriggerFor] = "appMenu">Menu</button>
+
+    <mat-menu #subMenu1="matMenu" xPosition="after">
+      <button mat-menu-item>Register User</button>
+      <button mat-menu-item>Remove User</button>
+      <button mat-menu-item>Update User</button>
+      <button mat-menu-item>View User Detaila</button>
+    </mat-menu>
+
+    <mat-menu #subMenu2="matMenu" xPosition="after">
+      <button mat-menu-item>Add Products</button>
+      <button mat-menu-item>Remove Products</button>
+      <button mat-menu-item>Update Products</button>
+      <button mat-menu-item>View Product Details</button>
+    </mat-menu>
+
+    <mat-menu #subMenu3="matMenu" xPosition="after">
+      <button mat-menu-item>Add Promotions</button>
+      <button mat-menu-item>Remove Promotions</button>
+      <button mat-menu-item>Update Promotions</button>
+      <button mat-menu-item>View Promotion Details</button>
+    </mat-menu>
+
+     
+
+    
+  
+
+
+
+
+
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

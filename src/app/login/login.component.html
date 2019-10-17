@@ -1,0 +1,21 @@
+ <div class="container-fluid"><br/> <br/> <br/>
+   <h3>login</h3>
+   <form>
+     <div class="logo">
+       <img src="../../assets/logo.png">
+     </div>
+     <div class="form-group">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" style="font-size: 45px !important ">account_circle</mat-icon>
+        <input placeholder="Username" class="form-control" [(ngModel)] = "Username">
+      </div>
+
+      <div class="form-group">
+          <mat-icon aria-hidden="false" aria-label="Example home icon" style="font-size: 45px !important">vpn_key</mat-icon>  
+          <input placeholder="password" type="password" class="form-control" [(ngModel)] = "password">
+           
+      </div>
+
+      <button mat-raised-button color="primary">login</button>
+      <button mat-raised-button color="primary">cancel</button>
+   </form>
+ </div>
