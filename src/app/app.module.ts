@@ -10,6 +10,9 @@ import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserRegComponent } from './user-reg/user-reg.component';
 import { UserSearchComponent } from './user-search/user-search.component';
+import { UserViewComponent } from './user-view/user-view.component';
+import { UserUpdateComponent } from './user-update/user-update.component';
+import { UserDeleteComponent } from './user-delete/user-delete.component';
 
  
 @NgModule({
@@ -18,7 +21,10 @@ import { UserSearchComponent } from './user-search/user-search.component';
     LoginComponent,
     AdminComponent,
     UserRegComponent,
-    UserSearchComponent
+    UserSearchComponent,
+    UserViewComponent,
+    UserUpdateComponent,
+    UserDeleteComponent
   ],
   imports: [
     BrowserModule,
