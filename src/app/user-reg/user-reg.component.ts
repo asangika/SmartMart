@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserRegComponent implements OnInit {
 
+  users = ['Admin', 'Cashier' ,'Sales Assistant'];
   constructor() { }
 
   ngOnInit() {

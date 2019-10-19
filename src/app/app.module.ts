@@ -9,6 +9,7 @@ import { MaterialModule } from './material/material.module';
 import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserRegComponent } from './user-reg/user-reg.component';
+import { UserSearchComponent } from './user-search/user-search.component';
 
  
 @NgModule({
@@ -16,7 +17,8 @@ import { UserRegComponent } from './user-reg/user-reg.component';
     AppComponent,
     LoginComponent,
     AdminComponent,
-    UserRegComponent
+    UserRegComponent,
+    UserSearchComponent
   ],
   imports: [
     BrowserModule,
