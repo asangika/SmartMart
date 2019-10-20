@@ -13,6 +13,7 @@ import { UserSearchComponent } from './user-search/user-search.component';
 import { UserViewComponent } from './user-view/user-view.component';
 import { UserUpdateComponent } from './user-update/user-update.component';
 import { UserDeleteComponent } from './user-delete/user-delete.component';
+import { ProductAddComponent } from './product-add/product-add.component';
 
  
 @NgModule({
@@ -24,7 +25,8 @@ import { UserDeleteComponent } from './user-delete/user-delete.component';
     UserSearchComponent,
     UserViewComponent,
     UserUpdateComponent,
-    UserDeleteComponent
+    UserDeleteComponent,
+    ProductAddComponent
   ],
   imports: [
     BrowserModule,
