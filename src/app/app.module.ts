@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {RouterModule, Routes} from '@angular/router';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -26,7 +26,8 @@ import { ProductAddComponent } from './product-add/product-add.component';
     UserViewComponent,
     UserUpdateComponent,
     UserDeleteComponent,
-    ProductAddComponent
+    ProductAddComponent,
+    routingComponents
   ],
   imports: [
     BrowserModule,
@@ -34,10 +35,7 @@ import { ProductAddComponent } from './product-add/product-add.component';
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    RouterModule.forRoot([
-      {path:'admin', component:AdminComponent},
-      {path:'login', component:LoginComponent},
-    ])
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
