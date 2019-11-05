@@ -3,37 +3,34 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="!(isHandset$ | async)">
-    <mat-toolbar color="primary"><img src="../../assets/logo.png" width="120" height="120"></mat-toolbar>
-    <mat-nav-list>
-      <div class="list-group">
-      <a mat-list-item href="#" class="list-group-item">User Master</a>
-        <div class="list-group">
-          <a mat-list-item href="#" class="list-group-item">Register User</a>
-          <a mat-list-item href="#" class="list-group-item">Remove User</a>
-          <a mat-list-item href="#" class="list-group-item">Update User</a>
-          <a mat-list-item href="#" class="list-group-item">View User</a>
-        </div>
-      <a mat-list-item href="#" class="list-group-item">Product Master</a>
-      ` <div class="list-group">
-          <a mat-list-item href="#" class="list-group-item">Add Product</a>
-          <a mat-list-item href="#" class="list-group-item">Remove Product</a>
-          <a mat-list-item href="#" class="list-group-item">Update Product</a>
-          <a mat-list-item href="#" class="list-group-item">View Product Details</a>
-          </div>
-      <a mat-list-item href="#" class="list-group-item">Promotions</a>
-      <div class="list-group">
-          <a mat-list-item href="#" class="list-group-item">Add Promotion</a>
-          <a mat-list-item href="#" class="list-group-item">Remove Promotion</a>
-          <a mat-list-item href="#" class="list-group-item">Update Promotion</a>
-          <a mat-list-item href="#" class="list-group-item">View Promotion Details</a>
-          </div>
-      <a mat-list-item href="#" class="list-group-item">Reports</a>
-      <a mat-list-item href="#">Customer Reviews</a>
+    <mat-toolbar color="grey"><img src="../../assets/logo.png" width="120" height="120"></mat-toolbar>
+    <div class="dropdown">
+      <span>UM</span>
+      <div class="dropdown-content">
+        <a href="#">1</a>
       </div>
-      </mat-nav-list>
+      <div class="dropdown-content">
+        <a href="#">1</a>
+      </div>
+      <div class="dropdown-content">
+        <a href="#">1</a>
+      </div>
+      <div class="dropdown-content">
+        <a href="#">1</a>
+      </div>
+      <div class="dropdown-content">
+        <a href="#">1</a>
+      </div> 
+
+    </div>
+    
+
+
+      
+       
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar color="grey">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -44,6 +41,8 @@
       </button>
       <span></span>
     </mat-toolbar>
-    load content
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+

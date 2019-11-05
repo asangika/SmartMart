@@ -2,3 +2,34 @@ button{
     margin-right: 25rem;
     margin-left: 5rem;
 }
+
+body{
+    background-image: url('../../assets/images/cart4.jpg') ; 
+    margin: 0;
+    padding: 0;
+    height: 145%;
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+
+.container-fluid{
+    width: 400px;
+    height: 810px;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-30% , -30%);
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+    
+     
+}
+
+button {
+    margin-right: 2.5rem;
+    margin-left: 3rem;
+     
+    
+}
