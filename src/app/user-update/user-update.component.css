@@ -2,18 +2,19 @@ body{
     background-image: url('../../assets/images/cart4.jpg') ; 
     margin: 0;
     padding: 0;
-    height: 145%;
+    height: 100%;
     background-position: center;
     background-size: cover;
     font-family: sans-serif;
 }
 
 button {
-    margin-right: 11rem;
-    margin-left: 11rem;
+    margin-right: 3rem;
+    margin-left: 5rem;
      
     
 }
+
 .container-fluid{
     width: 500px;
     height: 800px;
