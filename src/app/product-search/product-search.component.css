@@ -1,5 +1,5 @@
 body{
-    background-image: url('../../assets/images/cart1.jpg') ; 
+    background-image: url('../../assets/images/cart3.jpg') ; 
     margin: 0;
     padding: 0;
     height: 100%;
@@ -9,16 +9,17 @@ body{
 }
 
 button {
-    margin-right: 3.5rem;
-    margin-left: 4.5rem;
+    margin-right: 10rem;
+    margin-left: 10rem;
      
     
 }
+
 .container-fluid{
-    width: 500px;
-    height: 600px;
+    width: 400px;
+    height: 300px;
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 43%;
     transform: translate(-30% , -30%);
     box-sizing: border-box;
@@ -26,5 +27,3 @@ button {
     color: lavenderblush;
      
 }
-
- 

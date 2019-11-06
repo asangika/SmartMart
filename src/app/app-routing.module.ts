@@ -10,7 +10,10 @@ import { UserUpdateComponent } from './user-update/user-update.component';
 import { UserViewComponent } from './user-view/user-view.component';
 import { UserSearchComponent } from './user-search/user-search.component';
 import {ProductAddComponent} from './product-add/product-add.component';
-   
+import {ProductDeleteComponent}from './product-delete/product-delete.component';  
+import {ProductUpdateComponent}from './product-update/product-update.component';
+import {ProductViewComponent} from './product-view/product-view.component';
+import { ProductSearchComponent } from './product-search/product-search.component';
 
 const routes: Routes = [
    
@@ -22,6 +25,10 @@ const routes: Routes = [
   {path: 'user-view', component:UserViewComponent},
   {path: 'user-search', component: UserSearchComponent},
   {path: 'product-add', component: ProductAddComponent},
+  {path: 'product-delete', component: ProductDeleteComponent},
+  {path: 'product-update', component: ProductUpdateComponent},
+  {path: 'product-view', component:ProductViewComponent},
+  {path: 'product-search', component:ProductSearchComponent}
       
     
   
@@ -36,4 +43,6 @@ const routes: Routes = [
   // ]
 })
 export class AppRoutingModule { }
-export const routingComponents = [LoginComponent, MainNavComponent, UserRegComponent, UserDeleteComponent,UserSearchComponent,UserUpdateComponent,UserUpdateComponent]
+export const routingComponents = [LoginComponent, MainNavComponent, UserRegComponent, UserDeleteComponent,
+  UserSearchComponent,UserUpdateComponent,ProductDeleteComponent,ProductAddComponent,ProductUpdateComponent,
+ProductViewComponent, ProductSearchComponent]

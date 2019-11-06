@@ -10,13 +10,13 @@ body{
 
 button {
     margin-right: 3.5rem;
-    margin-left: 4.5rem;
+    margin-left: 5rem;
      
     
 }
 .container-fluid{
     width: 500px;
-    height: 600px;
+    height: 550px;
     position: absolute;
     top: 35%;
     left: 43%;
@@ -26,5 +26,3 @@ button {
     color: lavenderblush;
      
 }
-
- 

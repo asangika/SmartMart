@@ -1,7 +1,4 @@
-button{
-    margin-right: 25rem;
-    margin-left: 5rem;
-}
+ 
 
 body{
     background-image: url('../../assets/images/cart4.jpg') ; 
@@ -23,6 +20,7 @@ body{
     transform: translate(-30% , -30%);
     box-sizing: border-box;
     background: rgba(0,0,0,.5);
+    color: lavenderblush;
     
      
 }

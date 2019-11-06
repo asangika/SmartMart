@@ -8,7 +8,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { LoginComponent } from './login/login.component';
 import { MainNavComponent} from './main-nav/main-nav.component';
-
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
@@ -18,6 +17,10 @@ import { UserSearchComponent } from './user-search/user-search.component';
 import {UserRegComponent}from './user-reg/user-reg.component';
 import {UserDeleteComponent}from './user-delete/user-delete.component';
 import { ProductAddComponent } from './product-add/product-add.component';
+import { ProductDeleteComponent } from './product-delete/product-delete.component';
+import { ProductUpdateComponent } from './product-update/product-update.component';
+import { ProductViewComponent } from './product-view/product-view.component';
+import { ProductSearchComponent } from './product-search/product-search.component';
  
 
  
@@ -30,8 +33,13 @@ import { ProductAddComponent } from './product-add/product-add.component';
     UserSearchComponent,
     UserRegComponent,
     UserDeleteComponent,
-    ProductAddComponent
+    ProductAddComponent,
+    ProductDeleteComponent,
+    ProductUpdateComponent,
+    ProductViewComponent,
+    ProductSearchComponent
   ],
+  
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -48,7 +56,10 @@ import { ProductAddComponent } from './product-add/product-add.component';
       {path: 'user-view', component:UserViewComponent},
       {path: 'user-search', component: UserSearchComponent},
       {path: 'product-add', component:ProductAddComponent},
-       
+      {path: 'product-delete', component:ProductDeleteComponent},
+      {path: 'product-update', component:ProductUpdateComponent},
+      {path: 'product-view', component:ProductViewComponent},
+      {path: 'product-search', component:ProductSearchComponent}
     ]),
       
     LayoutModule,
