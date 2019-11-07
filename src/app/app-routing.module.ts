@@ -14,6 +14,7 @@ import {ProductDeleteComponent}from './product-delete/product-delete.component';
 import {ProductUpdateComponent}from './product-update/product-update.component';
 import {ProductViewComponent} from './product-view/product-view.component';
 import { ProductSearchComponent } from './product-search/product-search.component';
+import { StockUpdateComponent } from './stock-update/stock-update.component';
 
 const routes: Routes = [
    
@@ -28,7 +29,8 @@ const routes: Routes = [
   {path: 'product-delete', component: ProductDeleteComponent},
   {path: 'product-update', component: ProductUpdateComponent},
   {path: 'product-view', component:ProductViewComponent},
-  {path: 'product-search', component:ProductSearchComponent}
+  {path: 'product-search', component:ProductSearchComponent},
+  {path: 'stock-update', component:StockUpdateComponent}
       
     
   
@@ -45,4 +47,4 @@ const routes: Routes = [
 export class AppRoutingModule { }
 export const routingComponents = [LoginComponent, MainNavComponent, UserRegComponent, UserDeleteComponent,
   UserSearchComponent,UserUpdateComponent,ProductDeleteComponent,ProductAddComponent,ProductUpdateComponent,
-ProductViewComponent, ProductSearchComponent]
+ProductViewComponent, ProductSearchComponent,StockUpdateComponent]
