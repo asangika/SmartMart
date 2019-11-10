@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 
+
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
@@ -22,6 +23,10 @@ import { ProductUpdateComponent } from './product-update/product-update.componen
 import { ProductViewComponent } from './product-view/product-view.component';
 import { ProductSearchComponent } from './product-search/product-search.component';
 import { StockUpdateComponent } from './stock-update/stock-update.component';
+import { PromoAddComponent } from './promo-add/promo-add.component';
+import { PromoDeleteComponent } from './promo-delete/promo-delete.component';
+import { PromoUpdateComponent } from './promo-update/promo-update.component';
+import { PromoViewComponent } from './promo-view/promo-view.component';
  
 
  
@@ -39,7 +44,11 @@ import { StockUpdateComponent } from './stock-update/stock-update.component';
     ProductUpdateComponent,
     ProductViewComponent,
     ProductSearchComponent,
-    StockUpdateComponent
+    StockUpdateComponent,
+    PromoAddComponent,
+    PromoDeleteComponent,
+    PromoUpdateComponent,
+    PromoViewComponent
   ],
   
   imports: [
@@ -62,7 +71,11 @@ import { StockUpdateComponent } from './stock-update/stock-update.component';
       {path: 'product-update', component:ProductUpdateComponent},
       {path: 'product-view', component:ProductViewComponent},
       {path: 'product-search', component:ProductSearchComponent},
-      {path: 'stock-update', component:StockUpdateComponent}
+      {path: 'stock-update', component:StockUpdateComponent},
+      {path: 'promo-add', component:PromoAddComponent},
+      {path: 'promo-delete', component:PromoDeleteComponent},
+      {path: 'promo-update', component:PromoUpdateComponent},
+      {path: 'promo-view', component:PromoViewComponent}
     ]),
       
     LayoutModule,

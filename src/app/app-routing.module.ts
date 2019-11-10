@@ -15,6 +15,11 @@ import {ProductUpdateComponent}from './product-update/product-update.component';
 import {ProductViewComponent} from './product-view/product-view.component';
 import { ProductSearchComponent } from './product-search/product-search.component';
 import { StockUpdateComponent } from './stock-update/stock-update.component';
+import { PromoAddComponent } from './promo-add/promo-add.component';
+import { PromoDeleteComponent } from './promo-delete/promo-delete.component';
+import { PromoUpdateComponent } from './promo-update/promo-update.component';
+import { PromoViewComponent } from './promo-view/promo-view.component';
+ 
 
 const routes: Routes = [
    
@@ -30,7 +35,11 @@ const routes: Routes = [
   {path: 'product-update', component: ProductUpdateComponent},
   {path: 'product-view', component:ProductViewComponent},
   {path: 'product-search', component:ProductSearchComponent},
-  {path: 'stock-update', component:StockUpdateComponent}
+  {path: 'stock-update', component:StockUpdateComponent},
+  {path: 'promo-add', component:PromoAddComponent},
+  {path: 'promo-delete', component:PromoDeleteComponent},
+  {path: 'promo-update', component:PromoUpdateComponent},
+  {path: 'promo-view', component:PromoViewComponent}
       
     
   
@@ -47,4 +56,5 @@ const routes: Routes = [
 export class AppRoutingModule { }
 export const routingComponents = [LoginComponent, MainNavComponent, UserRegComponent, UserDeleteComponent,
   UserSearchComponent,UserUpdateComponent,ProductDeleteComponent,ProductAddComponent,ProductUpdateComponent,
-ProductViewComponent, ProductSearchComponent,StockUpdateComponent]
+ProductViewComponent, ProductSearchComponent,StockUpdateComponent,PromoAddComponent, PromoViewComponent,
+PromoDeleteComponent,PromoUpdateComponent]
