@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
+
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -57,6 +61,8 @@ import { PromoViewComponent } from './promo-view/promo-view.component';
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+ 	  AngularFirestoreModule,
     RouterModule.forRoot([
       
       {path:'login', component:LoginComponent},
