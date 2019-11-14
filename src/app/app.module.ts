@@ -14,6 +14,8 @@ import { UserViewComponent } from './user-view/user-view.component';
 import { UserUpdateComponent } from './user-update/user-update.component';
 import { UserDeleteComponent } from './user-delete/user-delete.component';
 import { ProductAddComponent } from './product-add/product-add.component';
+import { RechargeComponent } from './recharge/recharge.component';
+import { WalletCreateComponent } from './wallet-create/wallet-create.component';
 
  
 @NgModule({
@@ -27,7 +29,9 @@ import { ProductAddComponent } from './product-add/product-add.component';
     UserUpdateComponent,
     UserDeleteComponent,
     ProductAddComponent,
-    routingComponents
+    routingComponents,
+    RechargeComponent,
+    WalletCreateComponent,
   ],
   imports: [
     BrowserModule,

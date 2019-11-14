@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  
+    background-color: grey;
+    
+}
+
+h1{
+    text-align:center;
+    padding: 0px;
+    font-size: 35px;
+    color: black;
+    
+}
+.create{
+    background-color: darkcyan;
+    width: 500px;
+    height: 740px;
+    margin-left: 500px;
+    color: rgb(8, 65, 25);
+    font-size: 18px;
+    font-style:inherit;
+    padding: 55px;
+    border-radius: 10px;
+    
+}
+#create{
+    margin-left: 50px;
+}
+label{
+    color:black;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+#cusname{
+    width: 300px;
+    border:none;
+    border-radius: 3px;
+    outline: none;
+}
+#nic{
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+#mobile{
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+#email{
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+#address{
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+#amount{
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+#recharge{
+    width: 150px;
+    padding: 7px;
+    font-size: 16px;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+}
+#recharge:hover {
+    background-color:crimson;
+    color: white;
+  }
+#cancel{
+    width: 150px;
+    padding: 7px;
+    font-size: 16px;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+}
+    #cancel:hover {
+        background-color:crimson;
+        color: white;
+      }
