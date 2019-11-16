@@ -1,13 +1,7 @@
  
 
 body{
-    background-image: url('../../assets/images/cart4.jpg') ; 
-    margin: 0;
-    padding: 0;
-    height: 145%;
-    background-position: center;
-    background-size: cover;
-    font-family: sans-serif;
+    background-color: skyblue;
 }
 
 

@@ -19,11 +19,12 @@ import { PromoAddComponent } from './promo-add/promo-add.component';
 import { PromoDeleteComponent } from './promo-delete/promo-delete.component';
 import { PromoUpdateComponent } from './promo-update/promo-update.component';
 import { PromoViewComponent } from './promo-view/promo-view.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
  
 
 const routes: Routes = [
-   
-  {path: 'login', component: LoginComponent}, 
+   {path: ' ', component: LoginComponent},
+  {path: 'dropdown', component:DropdownComponent},
   {path: 'main-nav',component: MainNavComponent},
   {path: 'user-reg', component: UserRegComponent},
   {path: 'user-delete', component: UserDeleteComponent},
@@ -57,4 +58,4 @@ export class AppRoutingModule { }
 export const routingComponents = [LoginComponent, MainNavComponent, UserRegComponent, UserDeleteComponent,
   UserSearchComponent,UserUpdateComponent,ProductDeleteComponent,ProductAddComponent,ProductUpdateComponent,
 ProductViewComponent, ProductSearchComponent,StockUpdateComponent,PromoAddComponent, PromoViewComponent,
-PromoDeleteComponent,PromoUpdateComponent]
+PromoDeleteComponent,PromoUpdateComponent,DropdownComponent]

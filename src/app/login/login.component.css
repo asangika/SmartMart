@@ -18,13 +18,9 @@ button{
 
 
 body{
-    background-image: url('../../assets/images/cart.jpg') ; 
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    font-family: sans-serif;
+    background-color: rgb(63, 231, 223)
+     
+    
 }
 
  
