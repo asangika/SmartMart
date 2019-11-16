@@ -16,6 +16,7 @@ import { UserDeleteComponent } from './user-delete/user-delete.component';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { RechargeComponent } from './recharge/recharge.component';
 import { WalletCreateComponent } from './wallet-create/wallet-create.component';
+import { VieworderComponent } from './vieworder/vieworder.component';
 
  
 @NgModule({
@@ -32,6 +33,8 @@ import { WalletCreateComponent } from './wallet-create/wallet-create.component';
     routingComponents,
     RechargeComponent,
     WalletCreateComponent,
+    VieworderComponent,
+  
   ],
   imports: [
     BrowserModule,
