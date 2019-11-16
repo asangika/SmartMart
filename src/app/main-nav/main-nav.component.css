@@ -16,23 +16,6 @@
   z-index: 1;
 }
 
-.dropdown{
-  width: inherit !important;
-  height: max-content;
-  border-style: solid;
-  border-width: 1px;
-  text-align: center;
-}
+ 
 
-.dropdown .dropdown-content{
-  width: inherit;
-  height: 30px;
-  border-style: solid;
-  border-width: 1px;
-  text-align: center;
-  display: none;
-}
-
-
-
-
+ 
