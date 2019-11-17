@@ -17,6 +17,7 @@ import { ProductAddComponent } from './product-add/product-add.component';
 import { RechargeComponent } from './recharge/recharge.component';
 import { WalletCreateComponent } from './wallet-create/wallet-create.component';
 import { VieworderComponent } from './vieworder/vieworder.component';
+import { PreorderComponent } from './preorder/preorder.component';
 
  
 @NgModule({
@@ -34,6 +35,7 @@ import { VieworderComponent } from './vieworder/vieworder.component';
     RechargeComponent,
     WalletCreateComponent,
     VieworderComponent,
+    PreorderComponent,
   
   ],
   imports: [

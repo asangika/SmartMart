@@ -9,16 +9,20 @@ import { WalletCreateComponent } from './wallet-create/wallet-create.component';
 import { VieworderComponent } from './vieworder/vieworder.component';
 import { ProductAddComponent } from './product-add/product-add.component';
 import { UserDeleteComponent } from './user-delete/user-delete.component';
+import { PreorderComponent } from './preorder/preorder.component';
 
 
 const routes: Routes = [
   {path: 'admin', component: AdminComponent},
   {path: 'login', component: LoginComponent}, 
-  {path: 'luser-delete', component: UserDeleteComponent},  
+  {path: 'user-delete', component: UserDeleteComponent},
+  {path: 'product-add', component: ProductAddComponent},   
   {path: 'recharge', component: RechargeComponent}, 
   {path: 'wallet-create', component: WalletCreateComponent}, 
-  {path: 'vieworder', component: VieworderComponent},   
-  {path: 'product-add', component: ProductAddComponent},  
+  {path: 'vieworder', component: VieworderComponent}, 
+  {path: 'preorder', component: PreorderComponent},   
+  
+
 ];
 
 @NgModule({

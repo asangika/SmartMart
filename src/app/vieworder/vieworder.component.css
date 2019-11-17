@@ -56,9 +56,12 @@ label{
         color: white;
       }
 table{
-    font-size: 18px;
+    font-size: 28px;
     font-style: italic;
     text-align: center;
-    margin-left: 600px;
+    margin-left: 30px;
+    border-color: black;
+    background-color: darksalmon;
+   
 
 }
