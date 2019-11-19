@@ -18,12 +18,14 @@ body{
     padding: 0 0 0;
 	font:14px/1.3 'Segoe UI',Arial, sans-serif;
 	min-height:500px;
+	text-align: center;
 }
 
 a, a:visited {
 	text-decoration:none;
 	outline:none;
 	color:#54a6de;
+	text-align: center;
 }
 
 a:hover{
@@ -53,6 +55,7 @@ section, footer, nav{
 	margin: 1px;
 	border-radius: 3px;
 	position: relative;
+	text-align: center;
 }
 
 #colorNav > ul > li > a{
@@ -60,6 +63,7 @@ section, footer, nav{
 	text-decoration:none !important;
 	font-size:24px;
 	padding: 25px;
+	text-align: center;
 }
 
 #colorNav li ul{
@@ -67,7 +71,7 @@ section, footer, nav{
 	list-style: none;
 	text-align:center;
 	width:180px;
-	left:70px;
+	left:-50px;
 	margin-left:-90px;
 	top:10px;
 	font:bold 12px 'Open Sans Condensed', sans-serif;
@@ -138,16 +142,17 @@ section, footer, nav{
 
 #colorNav li.green{
 	/* This is the color of the menu item */
-	background-color:#00c08b;
+	background-color:#45a7d4;
 	
 	/* This is the color of the icon */
-	color:#127a5d;
+	color:black;
 }
 
-#colorNav li.red{		background-color:#ea5080;color:#aa2a52;}
-#colorNav li.blue{		background-color:#53bfe2;color:#2884a2;}
-#colorNav li.yellow{	background-color:#f8c54d;color:#ab8426;}
-#colorNav li.purple{	background-color:#df6dc2;color:#9f3c85;}
+#colorNav li.red{		background-color:#6698f5;color:black;}
+#colorNav li.blue{		background-color:#3f94e4;color:black;}
+#colorNav li.yellow{	background-color:#3a70d4;color:black;}
+#colorNav li.purple{	background-color:#445cc5;color:black;}
+#colorNav li.brown{ 	background-color:rgb(4, 43, 170); color:brown;}
 
 
  

@@ -23,7 +23,8 @@ import { DropdownComponent } from './dropdown/dropdown.component';
  
 
 const routes: Routes = [
-   {path: ' ', component: LoginComponent},
+  {path: '', redirectTo: '/login', pathMatch: 'full'},
+  {path: 'login', component:LoginComponent},
   {path: 'dropdown', component:DropdownComponent},
   {path: 'main-nav',component: MainNavComponent},
   {path: 'user-reg', component: UserRegComponent},
@@ -40,10 +41,7 @@ const routes: Routes = [
   {path: 'promo-add', component:PromoAddComponent},
   {path: 'promo-delete', component:PromoDeleteComponent},
   {path: 'promo-update', component:PromoUpdateComponent},
-  {path: 'promo-view', component:PromoViewComponent}
-      
-    
-  
+  {path: 'promo-view', component:PromoViewComponent},
 ];
 
 @NgModule({

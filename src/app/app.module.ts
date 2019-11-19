@@ -69,29 +69,7 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     HttpModule,
     AngularFireModule.initializeApp(environment.firebase),
  	  AngularFirestoreModule,
-    RouterModule.forRoot([
-      
-      {path:'login', component:LoginComponent},
-      {path:'main-nav', component:MainNavComponent},
-      {path: 'user-reg', component: UserRegComponent},
-      {path: 'user-delete', component: UserDeleteComponent},
-      {path: 'user-update', component:UserUpdateComponent},
-      {path: 'user-view', component:UserViewComponent},
-      {path: 'user-search', component: UserSearchComponent},
-      {path: 'product-add', component:ProductAddComponent},
-      {path: 'product-delete', component:ProductDeleteComponent},
-      {path: 'product-update', component:ProductUpdateComponent},
-      {path: 'product-view', component:ProductViewComponent},
-      {path: 'product-search', component:ProductSearchComponent},
-      {path: 'stock-update', component:StockUpdateComponent},
-      {path: 'promo-add', component:PromoAddComponent},
-      {path: 'promo-delete', component:PromoDeleteComponent},
-      {path: 'promo-update', component:PromoUpdateComponent},
-      {path: 'promo-view', component:PromoViewComponent},
-      {path: 'dropdown', component:DropdownComponent}
-      
-    ]),
-      
+     AppRoutingModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
