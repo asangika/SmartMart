@@ -61,10 +61,11 @@ import { PromoViewComponent } from './promo-view/promo-view.component';
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebase,'SmartMart'),
  	  AngularFirestoreModule,
     RouterModule.forRoot([
       
+      {path: '', redirectTo: '/login', pathMatch: 'full'},
       {path:'login', component:LoginComponent},
       {path:'main-nav', component:MainNavComponent},
       {path: 'user-reg', component: UserRegComponent},

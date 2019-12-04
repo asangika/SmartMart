@@ -3,30 +3,125 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="!(isHandset$ | async)">
-    <mat-toolbar color="grey"><img src="../../assets/logo.png" width="120" height="120"></mat-toolbar>
-    <div class="dropdown">
-      <span>UM</span>
-      <div class="dropdown-content">
-        <a href="#">1</a>
-      </div>
-      <div class="dropdown-content">
-        <a href="#">1</a>
-      </div>
-      <div class="dropdown-content">
-        <a href="#">1</a>
-      </div>
-      <div class="dropdown-content">
-        <a href="#">1</a>
-      </div>
-      <div class="dropdown-content">
-        <a href="#">1</a>
-      </div> 
-
-    </div>
-    
-
 
       
+    <mat-toolbar color="grey"><img src="../../assets/logo.png" width="120" height="120" ></mat-toolbar>
+     
+    <!-- /////////////////////////////////////
+    ////////////////////////////////////
+    //////////////////////////////////// -->
+
+    <!-- <nav id="colorNav">
+      <ul><br/>
+        <li class="green"><br/>
+          <a href="#" class="icon-home">Users</a>
+          <ul>
+            <li><a (click)="selectValue(1)">User Register</a></li>
+            <li><a (click)="selectValue(2)">Remove User </a></li>
+            <li><a href="#">Update User</a></li>
+            <li><a href="#">View User</a></li>
+          </ul>
+        </li><br/>
+        <li class="red"><br/>
+          <a href="#" class="icon-cogs">Products</a>
+          <ul>
+            <li><a (click)="selectValue(3)">Add Product</a></li>
+            <li><a (click)="selectValue(4)">Remove Product</a></li>
+            <li><a href="#">Update Product</a></li>
+            <li><a href="#">View Product</a></li>
+            <li><a href="#">View Stock</a></li>
+          </ul>
+        </li><br/>
+        <li class="blue"><br/>
+          <a href="#" class="icon-twitter">Promotions</a>
+          <ul>
+            <li><a (click)="selectValue(5)">Add Promotion</a></li>
+            <li><a (click)="selectValue(6)">Remove Promotion</a></li>
+            <li><a href="#">Update Promotion</a></li>
+            <li><a href="#">View Promotion</a></li>
+            
+            
+          </ul>
+        </li><br/>
+        <li class="yellow"><br/>
+          <a href="#" class="icon-beaker">Wallet</a>
+          <ul>
+            <li><a href="#">Create Wallet</a></li>
+            <li><a href="#">Recharge Wallet</a></li>
+             
+          </ul>
+        </li><br/>
+        <li class="purple"><br/>
+          <a href="#" class="icon-envelope">Feedback</a>
+          <ul>
+            <li><a href="#">View Feedback</a></li>
+          </ul>
+        </li><br/>
+         
+      </ul><br/>
+    </nav> -->
+    
+
+    <div class="sidenav">
+      <button class="dropdown-btn" (focus)="dropDown('dropdown-btn')">Users 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a (click)="selectValue(1)">User Register</a>
+        <a (click)="selectValue(2)">Registered Users</a>
+      </div>
+      <button class="dropdown-btn1" (focus)="dropDown('dropdown-btn1')">Products 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a (click)="selectValue(3)">Add products</a>
+        <a (click)="selectValue(5)">View added products</a>
+      </div>
+      <button class="dropdown-btn2" (focus)="dropDown('dropdown-btn2')">Promotions 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a (click)="selectValue(5)">Add promotions</a>
+        <a (click)="selectValue(5)">View promotions</a>
+      </div>
+      <button class="dropdown-btn3" (click)="selectValue(5)">Feedback
+        <i class="fa fa-caret-down"></i>
+      </button>   
+  </div>
+    
+    <div class="main">
+      <h2>Sidebar Dropdown</h2>
+      <p>Click on the dropdown button to open the dropdown menu inside the side navigation.</p>
+      <p>This sidebar is of full height (100%) and always shown.</p>
+      <p>Some random text..</p>
+    </div>
+    <!-- <script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    print("hi");
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+    }
+    </script> -->
+         
+    
+        <!-- BSA AdPacks code. Please ignore and remove.--> 
+    <!-- <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script src="http://cdn.tutorialzine.com/misc/adPacks/v1.js" async></script> -->
+
+    <!-- /////////////////////////////////////
+    ////////////////////////////////////
+    ///////////////////////////////////   -->
        
   </mat-sidenav>
   <mat-sidenav-content>
@@ -41,8 +136,18 @@
       </button>
       <span></span>
     </mat-toolbar>
-    <router-outlet></router-outlet>
+     
+    <app-user-reg *ngIf="selectedComponent === 1" ></app-user-reg>
+    <app-user-delete *ngIf="selectedComponent === 2" ></app-user-delete>
+    <app-product-add *ngIf="selectedComponent === 3" ></app-product-add>
+    <app-product-delete *ngIf="selectedComponent === 4" ></app-product-delete>
+    <app-promo-add *ngIf="selectedComponent === 5" ></app-promo-add>
+    <app-promo-delete *ngIf="selectedComponent === 6" ></app-promo-delete>
+  
+    
+
+
+
+
   </mat-sidenav-content>
 </mat-sidenav-container>
-
-

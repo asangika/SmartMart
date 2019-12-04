@@ -23,6 +23,7 @@ import { PromoViewComponent } from './promo-view/promo-view.component';
 
 const routes: Routes = [
    
+  {path: '', redirectTo: '/login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent}, 
   {path: 'main-nav',component: MainNavComponent},
   {path: 'user-reg', component: UserRegComponent},
