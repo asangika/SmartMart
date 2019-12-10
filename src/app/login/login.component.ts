@@ -1,9 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from "@angular/forms";
-import { Injectable } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
-import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-login',
@@ -12,17 +7,9 @@ import * as firebase from 'firebase';
 })
 export class LoginComponent implements OnInit {
   
-  // Username:string;
-  // password:string;
-
-  loginForm = new FormGroup({
-    userName: new FormControl(''),
-    password: new FormControl(''),  
-  });
+  Username:string;
+  password:string;
   
-  onclick(){
-
-  }
   constructor() { }
 
   ngOnInit() {
@@ -34,3 +21,4 @@ export class LoginComponent implements OnInit {
 
 
 }
+ 

@@ -1,26 +1,34 @@
 <body>
 <div class="container-fluid">
   <h1>Product Registration</h1>
-  <form [formGroup]="productsAddForm" (ngSubmit)="onClick(productsAddForm.value)" >
+  <form>
       <div class = "form-group">
-          <label>Barcode number</label>
-          <input type="text" class="form-control" formControlName="barcode">
+          <label>Bar code number</label>
+          <input type="text" class="form-control">
+      </div>
+      <div class = "form-group">
+          <label>Prodcut ID</label> 
+          <input type="text" class="form-control">
       </div>
       <div class="form-group">
           <label>Product Name</label>
-          <input type="text"class="form-control" formControlName="productName">
+          <input type="text"class="form-control">
       </div>
       <div class="form-group">
-             <label>Unit Price</label> 
-             <input type=""class="form-control" formControlName="unitPrice">
+             <label>Unit Price</label>
+             <input type=""class="form-control">
       </div>
       
        <br/>
          <button class="btn btn-primary" type="submit"> Submit </button>
-            <button class="btn btn-primary" type="reset"> Clear </button>            
+            <button class="btn btn-primary" type="reset"> Clear </button>
+       
+      
+       
+      
+       
+      
   </form>
-
-  {{productsAddForm.value | json}}
 </div>
 </body>
  

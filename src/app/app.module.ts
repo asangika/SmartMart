@@ -66,37 +66,10 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
-
-    AngularFireModule.initializeApp(environment.firebase,'SmartMart'),
- 	  AngularFirestoreModule,
-    RouterModule.forRoot([
-      
-      {path: '', redirectTo: '/login', pathMatch: 'full'},
-      {path:'login', component:LoginComponent},
-      {path:'main-nav', component:MainNavComponent},
-      {path: 'user-reg', component: UserRegComponent},
-      {path: 'user-delete', component: UserDeleteComponent},
-      {path: 'user-update', component:UserUpdateComponent},
-      {path: 'user-view', component:UserViewComponent},
-      {path: 'user-search', component: UserSearchComponent},
-      {path: 'product-add', component:ProductAddComponent},
-      {path: 'product-delete', component:ProductDeleteComponent},
-      {path: 'product-update', component:ProductUpdateComponent},
-      {path: 'product-view', component:ProductViewComponent},
-      {path: 'product-search', component:ProductSearchComponent},
-      {path: 'stock-update', component:StockUpdateComponent},
-      {path: 'promo-add', component:PromoAddComponent},
-      {path: 'promo-delete', component:PromoDeleteComponent},
-      {path: 'promo-update', component:PromoUpdateComponent},
-      {path: 'promo-view', component:PromoViewComponent}
-    ]),
-      
-
     HttpModule,
     AngularFireModule.initializeApp(environment.firebase),
  	  AngularFirestoreModule,
      AppRoutingModule,
-
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,

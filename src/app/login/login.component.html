@@ -1,39 +1,11 @@
-
- <body> 
- <div class="container-fluid"><br/> <br/> 
-    
-   <form [formGroup]="loginForm" >
-     <div class="logo">
-       <img src="../../assets/logo.png" width="400px" height="250px">
-     </div>
-     <div class="form-group">
-        <mat-icon aria-hidden="false" aria-label="Example home icon" style="font-size: 45px !important ">account_circle</mat-icon>
-        <input placeholder="Username" class="form-control" formControlName="userName">
-
 <body> 
   <div class="container-fluid"><br/> <br/> 
      
     <form>
       <div class="logo">
         <img src="../../assets/logo.png" width="400px" height="250px">
-
       </div>
       <div class="form-group">
-
-        <mat-icon aria-hidden="false" aria-label="Example home icon" style="font-size: 45px !important">https</mat-icon>  
-        <input placeholder="password" type="password" class="form-control" formControlName="password">
-           
-      </div>
-<br/>
-      <button (click)="onclick" type="button" mat-raised-button color="primary">login</button>
-      <button mat-raised-button color="primary">cancel</button>
-<br/><br/>
-      <span><a href="#">Forgot password?</a></span>
-   </form>
-   {{loginForm.value | json}}
- </div>
-</body>
-
          <mat-icon aria-hidden="false" aria-label="Example home icon" style="font-size: 45px !important ">account_circle</mat-icon>
          <input placeholder="Username" class="form-control" [(ngModel)] = "Username">
        </div>
@@ -51,4 +23,3 @@
     </form>
   </div>
  </body>
-

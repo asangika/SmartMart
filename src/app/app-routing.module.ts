@@ -23,15 +23,9 @@ import { DropdownComponent } from './dropdown/dropdown.component';
  
 
 const routes: Routes = [
-
-   
-  {path: '', redirectTo: '/login', pathMatch: 'full'},
-  {path: 'login', component: LoginComponent}, 
-
   {path: '', redirectTo: '/login', pathMatch: 'full'},
   {path: 'login', component:LoginComponent},
   {path: 'dropdown', component:DropdownComponent},
-
   {path: 'main-nav',component: MainNavComponent},
   {path: 'user-reg', component: UserRegComponent},
   {path: 'user-delete', component: UserDeleteComponent},
