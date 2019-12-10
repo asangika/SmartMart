@@ -4,6 +4,7 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="!(isHandset$ | async)">
 
+
       
     <mat-toolbar color="grey"><img src="../../assets/logo.png" width="120" height="120" ></mat-toolbar>
      
@@ -122,6 +123,15 @@
     <!-- /////////////////////////////////////
     ////////////////////////////////////
     ///////////////////////////////////   -->
+
+
+      
+    <mat-toolbar color="grey"><img src="../../assets/logo.png" width="120" height="120" ></mat-toolbar>
+     
+    <app-dropdown></app-dropdown>
+
+      
+
        
   </mat-sidenav>
   <mat-sidenav-content>
@@ -136,6 +146,7 @@
       </button>
       <span></span>
     </mat-toolbar>
+
      
     <app-user-reg *ngIf="selectedComponent === 1" ></app-user-reg>
     <app-user-delete *ngIf="selectedComponent === 2" ></app-user-delete>
@@ -149,5 +160,8 @@
 
 
 
+
+    <!-- <router-outlet></router-outlet> -->
+    <app-login></app-login>
   </mat-sidenav-content>
 </mat-sidenav-container>

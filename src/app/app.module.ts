@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
-
+import { HttpModule } from '@angular/http';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
@@ -31,7 +31,10 @@ import { PromoAddComponent } from './promo-add/promo-add.component';
 import { PromoDeleteComponent } from './promo-delete/promo-delete.component';
 import { PromoUpdateComponent } from './promo-update/promo-update.component';
 import { PromoViewComponent } from './promo-view/promo-view.component';
- 
+import { ImageUploadComponent } from './image-upload/image-upload.component';
+
+import { ImageService } from './image-upload/image-service';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
  
 @NgModule({
@@ -52,7 +55,9 @@ import { PromoViewComponent } from './promo-view/promo-view.component';
     PromoAddComponent,
     PromoDeleteComponent,
     PromoUpdateComponent,
-    PromoViewComponent
+    PromoViewComponent,
+    ImageUploadComponent,
+    DropdownComponent
   ],
   
   imports: [
@@ -61,6 +66,7 @@ import { PromoViewComponent } from './promo-view/promo-view.component';
     MaterialModule,
     ReactiveFormsModule,
     FormsModule,
+
     AngularFireModule.initializeApp(environment.firebase,'SmartMart'),
  	  AngularFirestoreModule,
     RouterModule.forRoot([
@@ -85,6 +91,12 @@ import { PromoViewComponent } from './promo-view/promo-view.component';
       {path: 'promo-view', component:PromoViewComponent}
     ]),
       
+
+    HttpModule,
+    AngularFireModule.initializeApp(environment.firebase),
+ 	  AngularFirestoreModule,
+     AppRoutingModule,
+
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
@@ -93,7 +105,7 @@ import { PromoViewComponent } from './promo-view/promo-view.component';
     MatListModule
     
   ],
-  providers: [],
+  providers: [ImageService],
   bootstrap: [AppComponent]
 })
 export class AppModule {ɵɵdefineInjectable: any }

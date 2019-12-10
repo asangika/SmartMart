@@ -1,22 +1,3 @@
-.sidenav-container {
-  height: 100%;
-}
-
-.sidenav {
-  width: 200px;
-}
-
-.sidenav.mat-toolbar.mat-primary {
-  background: inherit;
-}
-
-.mat-toolbar.mat-primary {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-
 /*-------------------------
 	Simple reset
 --------------------------*/
@@ -44,7 +25,7 @@ a, a:visited {
 	text-decoration:none;
 	outline:none;
 	color:#54a6de;
-	/* text-align: center; */
+	text-align: center;
 }
 
 a:hover{
@@ -62,7 +43,7 @@ section, footer, nav{
 
 
 #colorNav > ul{
-	width: 200px; /* Increase when adding more menu items */
+	width: 450px; /* Increase when adding more menu items */
 	margin:0 auto;
 }
 
@@ -86,15 +67,14 @@ section, footer, nav{
 }
 
 #colorNav li ul{
-	position: relative; 
+	position: relative;; 
 	list-style: none;
 	text-align:center;
-	width:200px;
+	width:180px;
 	left:-50px;
 	margin-left:-90px;
 	top:10px;
 	font:bold 12px 'Open Sans Condensed', sans-serif;
-	right: 100;
 	
 	/* This is important for the show/hide CSS animation */
 	max-height:0px;
@@ -120,26 +100,26 @@ section, footer, nav{
 	background-color:#363636;
 }
 
-/* #colorNav li ul li:hover{
+#colorNav li ul li:hover{
 	background-color:#444;
-} */
+}
 
 #colorNav li ul li:first-child{
 	border-radius:3px 3px 0 0;
-	margin-top:40px;
+	margin-top:25px;
 	position:relative;
 }
 
 #colorNav li ul li:first-child:before{ /* the pointer tip */
 	content:'';
-	position: relative;
+	position:absolute;
 	width:1px;
 	height:1px;
 	border:5px solid transparent;
 	border-bottom-color:#313131;
-	left:100%;
+	left:50%;
 	top:-10px;
-	margin-right:100px;
+	margin-left:-5px;
 }
 
 #colorNav li ul li:last-child{
@@ -151,7 +131,7 @@ section, footer, nav{
 /* transition animation on hover */
 
 #colorNav li:hover ul{
-	max-height:300px; /* Increase when adding more dropdown items */
+	max-height:200px; /* Increase when adding more dropdown items */
 }
 
 
@@ -175,81 +155,7 @@ section, footer, nav{
 #colorNav li.brown{ 	background-color:rgb(4, 43, 170); color:brown;}
 
 
-
-
-
-/* New navigation menu */
-
-/* Fixed sidenav, full height */
-.sidenav {
-	height: 100%;
-	width: 200px;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #111;
-	overflow-x: hidden;
-	padding-top: 20px;
-  }
-  
-  /* Style the sidenav links and the dropdown button */
-  .sidenav a, .dropdown-btn, .dropdown-btn1, .dropdown-btn2, .dropdown-btn3 {
-	padding: 6px 8px 6px 16px;
-	text-decoration: none;
-	font-size: 20px;
-	color: #818181;
-	display: block;
-	border: none;
-	background: none;
-	width: 100%;
-	text-align: left;
-	cursor: pointer;
-	outline: none;
-	height: 60px;
-  }
-  
-  /* On mouse-over */
-  .sidenav a:hover, .dropdown-btn:hover, .dropdown-btn1:hover, .dropdown-btn2:hover, .dropdown-btn3:hover {
-	color: #f1f1f1;
-  }
-  
-  /* Main content */
-  .main {
-	margin-left: 200px; /* Same as the width of the sidenav */
-	font-size: 20px; /* Increased text to enable scrolling */
-	padding: 0px 10px;
-  }
-  
-  /* Add an active class to the active dropdown button */
-  .active {
-	background-color: green;
-	color: white;
-  }
-  
-  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-  .dropdown-container {
-	display: none;
-	background-color: #262626;
-	padding-left: 8px;
-  }
-  
-  /* Optional: Style the caret down icon */
-  .fa-caret-down {
-	float: right;
-	padding-right: 8px;
-  }
-  
-  /* Some media queries for responsiveness */
-  @media screen and (max-height: 450px) {
-	.sidenav {padding-top: 15px;}
-	.sidenav a {font-size: 18px;}
-  }
-  
  
 
-
- 
- 
 
  
